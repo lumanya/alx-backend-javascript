@@ -5,8 +5,11 @@ import pluginJs from "@eslint/js";
 export default [
   {
     languageOptions: {
-      globals: globals.node, // For browser-specific globals like `window`, `document`
+      globals: globals.node, // Using Node.js globals
+    },
+    rules: {
+      "no-undef": "error", // Ensure undefined variables are flagged
     },
   },
-  pluginJs.configs.recommended, // Recommended ESLint rules
+  pluginJs.configs.recommended, // Include the recommended ESLint config
 ];

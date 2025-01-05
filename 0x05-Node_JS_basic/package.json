@@ -2,7 +2,7 @@
   "name": "node-js-basic",
   "version": "1.0.0",
   "description": "A basic Node.js project",
-  "main": "0-console.js",
+  "main": "index.js",
   "author": "Nathaniel",
   "devDependencies": {
     "@babel/core": "^7.26.0",
